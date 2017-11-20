@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script> 
+  $(function(){
+    $("#menu").load("./navmenu.html");
+    $("#footer-script").load("./footer.html"); 
+  });
+  </script> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+  <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+  <meta name="description" content="Ali Musa Iftikhar's home page">
+  <meta name="keywords" content="Ali Musa Iftikhar, Master Student, Tufts Graduate Student, Network Systems, Research">
+  <meta name="author" content="Ali Musa Iftikhar">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ali Musa Iftikhar</title>
+  <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
+  <link rel="icon" href="images/favicon.gif" type="image/x-icon"/>
+   <!--[if lt IE 9]>
+   <script src="html5.js"></script>
+    <![endif]-->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/png"/> 
+  <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"/> -->
+  <link rel="stylesheet" href="./css/w3.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  /* wide */
+  /*html,body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}*/
+  /* compact */
+  html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif} 
+  </style>
+
+  <!-- Schema Data -->
+  <!-- bio -->
+  <script type='application/ld+json'> 
+  {
+    "@context": "http://www.schema.org",
+    "@type": "person",
+    "name": "Ali Musa Iftikhar",
+    "jobTitle": "Computer Science Graduate Student",
+    "url": "https://www.eecs.tufts.edu/~musa/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "196 Boston Ave",
+      "addressLocality": "Medford",
+      "addressRegion": "MA",
+      "postalCode": "02155",
+      "addressCountry": "USA"
+    },
+    "email": "musa [at] cs.tufts.edu"
+  }
+  </script>
+
+  <!-- publications  -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org", 
+      "@graph": [
+      {
+        "@id": "#issue", 
+        "@type": "PublicationIssue", 
+        // "issueNumber": "15", 
+        "datePublished": "2016", 
+        "isPartOf": {
+            "@id": "#periodical", 
+            "@type": [
+                "PublicationVolume", 
+                "Periodical"
+            ], 
+            "name": "ACM Workshop on Hot Topics in Networks", 
+            // "issn": [
+            //     "1544-4554", 
+            //     "0163-9374"
+            // ], 
+            // "volumeNumber": "50", 
+            "publisher": "ACM"
+        }
+      }, 
+      {
+        "@type": "ScholarlyArticle", 
+        "isPartOf": "#issue", 
+        "description": "In this paper, we make a case for a redundancy-aware network stack (RANS) for data centers. In RANS, applications expose information about replicas to the network, which in turn, uses duplicate requests to improve performance of typical applications by enabling them to effectively avoid stragglers. At the heart of RANS is the use of duplicate-aware scheduling, which ensures that duplicate-requests do not overload the system and disturb any primary requests. We highlight the challenges and opportunities present at different layers of RANS, from new interfaces that capture replicas and their semantics, to in-network mechanisms that deal with duplicates. Our preliminary evaluation shows the promise of duplicate-aware scheduling in improving performance of typical data center applications.", 
+        "sameAs": "http://dx.doi.org/10.1145/3005745.3005764", 
+        "about": [
+            "Data center networks", 
+            "Redundancy"
+        ], 
+        "pageEnd": "57", 
+        "pageStart": "63", 
+        "name": "Towards a Redundancy-Aware Network Stack for Data Centers", 
+        "author": "Ali Musa Iftikhar"
+        }
+      ]
+    }
+  </script>
+
+</head>
+<body class="w3-light-grey">
+
+  <!-- Download resume button -->
+  <span class="w3-top w3-margin-right w3-margin-right w3-padding-xlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;opacity:0.85;">
+    <div style="margin-right:32px">
+      <a href="/~musa/resume.pdf"><button class="w3-btn w3-light-grey w3-padding-medium"><i class="fa fa-download fa-fw w3-margin-right w3-large w3-text-teal"></i>Download R&eacute;sum&eacute;</button></a>  
+    </div>
+  </span >
+              
+  <!-- menu -->
+  <div id="menu"></div>
+  
+  <!-- Page Container -->
+  <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+    <!-- The Grid -->
+    <div class="w3-row-padding" itemscope itemtype="http://schema.org/Person">
+    
+      <!-- Left Column -->
+      <div class="w3-third">
+      
+        <div class="w3-white w3-text-grey w3-card-4">
+          <div class="w3-display-container">
+            <img src="./images/me_cropped.jpg" style="width:100%" alt="Ali Musa" itemprop="image">
+            <!-- <div class="w3-display-bottomleft w3-container w3-text-black">
+              <h2>Ali Musa Iftikhar</h2>
+            </div> -->
+          </div>
+          <div class="w3-container" id="contact">
+
+            <h1 itemprop="name">Ali Musa Iftikhar</h1>
+
+            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>M.S. Comp Sci at <a href="http://www.tufts.edu/" itemprop="affiliation">Tufts University</a> (Dec 2017)</p>
+            <p itemprop="address"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Boston, US</p>
+            <p itemprop="email"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>musa [at] cs.tufts.edu</p>
+            <!-- <p><i class="fa fa-group fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="http://nat.cs.tufts.edu/" itemprop="affiliation">NAT</a> (Networking at Tufts) research group</p> -->
+            <hr>
+
+            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Interests</b></p>
+            <ul>
+              <li>Programming</li>
+              <li>Software Development</li>
+              <li>Data Center Networking</li>
+              <li>Network Systems</li>
+              <li>Robotics</li>
+              <li>Machine Vision</li>
+            </ul>
+           <hr>
+
+            <p class="w3-large"><b><i class="fa fa-group fa-fw w3-margin-right w3-text-teal"></i>Current Affiliations</b></p>
+            <ul>
+              <li><a href="http://nat.cs.tufts.edu/" itemprop="affiliation">NAT</a> (Networking at Tufts) research group</li>
+              <li><a href="http://www.cs.tufts.edu/" itemprop="affiliation">Dept. of Computer Science</a>, Tufts University</li>
+              <li><a href="https://sites.tufts.edu/cslol/" itemprop="affiliation">CSLOL</a></li>
+            </ul>
+            
+
+
+            <!-- <p>Data Center Networking</p> -->
+            <!-- <div class="w3-progress-container w3-round-xlarge w3-small">
+              <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:90%">
+                <div class="w3-center w3-text-white">90%</div>
+              </div>
+            </div> -->
+            
+            <!-- <p>Network Systems</p> -->
+            <!-- <div class="w3-progress-container w3-round-xlarge w3-small">
+              <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:80%">
+                <div class="w3-center w3-text-white">80%</div>
+              </div>
+            </div> -->
+            <!--
+            <p>Illustrator</p>
+            <div class="w3-progress-container w3-round-xlarge w3-small">
+              <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:75%">
+                <div class="w3-center w3-text-white">75%</div>
+              </div>
+            </div>
+            <p>Media</p>
+            <div class="w3-progress-container w3-round-xlarge w3-small">
+              <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:50%">
+                <div class="w3-center w3-text-white">50%</div>
+              </div>
+            </div>
+            <br>
+
+            <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+            <p>English</p>
+            <div class="w3-progress-container w3-round-xlarge">
+              <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:100%"></div>
+            </div>
+            <p>Spanish</p>
+            <div class="w3-progress-container w3-round-xlarge">
+              <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:55%"></div>
+            </div>
+            <p>German</p>
+            <div class="w3-progress-container w3-round-xlarge">
+              <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:25%"></div>
+            </div>
+        -->
+            <br>     
+            </div>
+            </div><br>
+
+      <!-- End Left Column -->
+      </div>
+
+      <!-- Right Column -->
+      <div class="w3-twothird">
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom" id="education">
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Tufts University</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2014 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+            <p class="w3-margin-left">Master of Science (Major: Computer Science, Concentration: Netwrok Systems).</p>
+            <p class="w3-margin-left">Advised by <a href="https://sites.google.com/site/fahaddogar/home" itemprop="knows">Fahad Dogar</a></p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Lahore University of Management Sciences (<a href="http://www.lums.edu.pk/" itemprop="alumniOf">LUMS</a>)</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2014</h6>
+            <p class="w3-margin-left">Bachelor of Science (Major: Electrical Engineering, Minor: Computer Science).</p>
+          <!--   <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>School of Coding</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
+            <p>Bachelor Degree</p> --><br>
+          </div>
+        </div>
+      
+        <div class="w3-container w3-card-2 w3-white w3-margin-bottom" id="work">
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Research Assistant @ Tufts University</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2014 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+            <p class="w3-margin-left"><a href="http://www.cs.tufts.edu/" itemprop="affiliation">Department of Computer Science</a></p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Teaching Assistant @ Tufts University & LUMS</b></h5>
+            <p class="w3-margin-left">
+              <span class="w3-text-teal">Spring 2017</span> &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.cs.tufts.edu/comp/160/">Introduction to Algorithms, Comp160</a> @ Tufts.<br>
+              <span class="w3-text-teal">Fall 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.cs.tufts.edu/comp/112/">Networks and Protocols, Comp112</a> @ Tufts.<br>
+              <span class="w3-text-teal">Spring 2016</span> &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.cs.tufts.edu/comp/170/">Computation Theory, Comp170</a> @ Tufts.<br>
+              <span class="w3-text-teal">Spring 2015</span> &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.cs.tufts.edu/comp/112/">Networks and Protocols, Comp112</a> @ Tufts.<br>
+              <span class="w3-text-teal">Fall 2013</span> &nbsp;&nbsp;&nbsp;&nbsp;Discrete Mathematics @ LUMS.
+            </p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>SDET Intern @ Microsoft</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2013</h6>
+            <p class="w3-margin-left"><a href="https://datamarket.azure.com/home">Microsoft Azure Marketplace</a>, Redmond.</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Research Intern @ Cyphynets</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Spring 2013</h6>
+            <p class="w3-margin-left"><a href="https://cyphynets.lums.edu.pk/">Laboratory for Cyber Physical Networks and Systems</a>, LUMS.</p>
+            <br>
+          </div>
+        </div>
+
+        
+        <div class="w3-container w3-card-2 w3-white" id="publications" itemscope itemtype="http://schema.org/ScholarlyArticle">
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Publications</h2>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>2016</b></h5>
+            <p class="w3-margin-left"><a href="https://dl.acm.org/authorize?N20726" title="Towards a Redundancy-Aware Network Stack for Data Centers" itemprop="name">Towards a Redundancy-Aware Network Stack for Data Centers</a><br>
+            <strong><span itemprop="author">Ali Musa Iftikhar</span></strong>, Fahad Dogar, and Ihsan Ayyub Qazi.<br />
+            <span class="w3-text-teal">HotNets '16</span> Proceedings of the 15th ACM Workshop on Hot Topics in Networks,&nbsp;2016</p>
+
+
+            <!-- ACM DL Bibliometrics: Towards a Redundancy-Aware Network Stack for Data Centers-->
+            <!-- <div class="acmdlstat" id ="stats3005764"><iframe src="http://dl.acm.org/authorizestats?N20726" width="100%" height="30" scrolling="no" frameborder="0">frames are not supported</iframe></div> -->
+
+
+            <!-- <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>London Business School</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+            <p>Master Degree</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>School of Coding</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
+            <p>Bachelor Degree</p>--><br>
+          </div>
+        </div>
+
+      <!-- End Right Column -->
+      </div>
+      
+    <!-- End Grid -->
+    </div>
+    
+    <!-- End Page Container -->
+  </div>
+
+  
+
+  <footer class="w3-container w3-teal w3-center w3-margin-top" id="footer">
+   <!-- <p>Follow me on social media.</p>-->
+    </br>
+    <!--<i class="fa fa-facebook-official w3-hover-text-indigo w3-large"></i>
+    <i class="fa fa-instagram w3-hover-text-purple w3-large"></i>
+    <i class="fa fa-snapchat w3-hover-text-yellow w3-large"></i>
+    <i class="fa fa-pinterest-p w3-hover-text-red w3-large"></i>
+    <i class="fa fa-twitter w3-hover-text-light-blue w3-large"></i>-->
+    <a href = "https://www.linkedin.com/in/musa-ifti/"><i class="fa fa-linkedin w3-hover-text-indigo w3-large"></i></a>
+    
+    <!-- Website template copyright note:
+    W3.CSS is Free
+    W3.CSS is free to use. No license is necessary.
+    We have created some responsive W3CSS templates for you to use.
+    You are free to modify, save, share, use or do whatever you want with them.
+    (as of 31 December 2016)
+    -->
+
+  <div id="footer-script"></div>
+  </footer>
+
+
+  <!-- <script>
+    //last updated
+    var lastModified = new Date(document.lastModified);
+    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    var m = "This page was last updated: " + lastModified.toLocaleDateString('en-US',options);
+    // var p = m.length;
+    // document.writeln("<center><h5>");
+    // document.write(m.substring(p, 0));
+    // document.writeln("</h5></center>");
+
+    var para = document.createElement("p");
+    var text = document.createTextNode(m);
+    para.appendChild(text);
+    var footer = document.getElementById('footer');
+    footer.appendChild(para);
+    //END: last updated
+  </script> -->
+
+</body>
+</html>

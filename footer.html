@@ -1,0 +1,18 @@
+<script>
+    //last updated
+    var lastModified = new Date(document.lastModified);
+    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    var m = "This page was last updated: " + lastModified.toLocaleDateString('en-US',options);
+    // var m = "This page was last updated: " + lastModified.toLocaleString();
+    // var p = m.length;
+    // document.writeln("<center><h5>");
+    // document.write(m.substring(p, 0));
+    // document.writeln("</h5></center>");
+
+    var para = document.createElement("p");
+    var text = document.createTextNode(m);
+    para.appendChild(text);
+    var footer = document.getElementById('footer');
+    footer.appendChild(para);
+    //END: last updated
+</script>
